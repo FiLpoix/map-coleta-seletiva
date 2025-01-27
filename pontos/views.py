@@ -26,3 +26,7 @@ def mapa(request):
 
     mapa_html = mapa._repr_html_()
     return render(request, 'pontos/mapa.html', {'mapa': mapa_html})
+
+
+def adicionar_ponto(request):
+    return render(request, 'pontos/add_ponto.html')
