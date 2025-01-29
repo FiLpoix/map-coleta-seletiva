@@ -1,8 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Adicionar Ponto de Coleta</title>
 </head>
 <body>
@@ -25,35 +28,10 @@
 
         <button type="button" onclick="adicionarPonto()">Adicionar Ponto</button>
     </form>
+    <button><a href="../mapa">voltar</a></button>
 
     <div class="message" id="message"></div>
 
-    <script>
-        async function adicionarPonto() {
-            const nome = document.getElementById('nome').value;
-            const descricao = document.getElementById('descricao').value;
-            const endereco = document.getElementById('endereco').value;
-            const latitude = parseFloat(document.getElementById('latitude').value);
-            const longitude = parseFloat(document.getElementById('longitude').value);
-
-            const response = await fetch('/api/pontos/', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ nome, descricao, endereco, latitude, longitude }),
-            });
-
-            const messageDiv = document.getElementById('message');
-            if (response.ok) {
-                messageDiv.style.color = 'green';
-                messageDiv.textContent = 'Ponto de coleta adicionado com sucesso!';
-                document.getElementById('pontoForm').reset();
-            } else {
-                messageDiv.style.color = 'red';
-                messageDiv.textContent = 'Erro ao adicionar o ponto de coleta. Tente novamente.';
-            }
-        }
-    </script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>

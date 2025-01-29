@@ -1,8 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Mapa de Coleta Seletiva</title>
 </head>
 <body>
@@ -12,5 +15,17 @@
     <div style="width: 50%; height: 500px;">
         {{ mapa|safe }}
     </div>
+
+    <div>
+        Lista
+
+        <li>
+            {% for x in pontos %}
+            <ul> {{x.nome}} </ul>
+        </li>
+        {% endfor %}
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>

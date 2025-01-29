@@ -16,7 +16,7 @@ class PontoColetaViewSet(ModelViewSet):
 def mapa(request):
     mapa = folium.Map(location=[-15.7801, -47.9292], zoom_start=5)  # Localização inicial (Brasil)
 
-    pontos = PontoColeta.objects.all()
+    pontos = PontoColeta.objects.order_by('nome')
     for ponto in pontos:
         folium.Marker(
             location=[ponto.latitude, ponto.longitude],
@@ -24,8 +24,13 @@ def mapa(request):
             icon=folium.Icon(color="green", icon="info-sign"),
         ).add_to(mapa)
 
+
     mapa_html = mapa._repr_html_()
-    return render(request, 'pontos/mapa.html', {'mapa': mapa_html})
+    context = {
+        'pontos': pontos,
+        'mapa': mapa_html
+    }
+    return render(request, 'pontos/mapa.html', context)
 
 
 def adicionar_ponto(request):
