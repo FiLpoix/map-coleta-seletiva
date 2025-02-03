@@ -24,7 +24,7 @@ def mapa(request):
             icon=folium.Icon(color="green", icon="info-sign"),
         ).add_to(mapa)
 
-
+        
     mapa_html = mapa._repr_html_()
     context = {
         'pontos': pontos,
