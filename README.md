@@ -9,8 +9,8 @@ pip
 virtualenv
 
 ### Clonar o Repositorio do GitHub
-git clone https://github.com/FiLpoix/map-coleta-seletiva.git
-cd mapa-coleta-seletiva
+01. git clone https://github.com/FiLpoix/map-coleta-seletiva.git
+02. cd mapa-coleta-seletiva
 ### Cria o ambiente virtual
 python -m venv venv
 ### Ativar o ambiente virutal
