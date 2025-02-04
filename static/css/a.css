@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+  
+}
+
+header {
+   
+    color: white;
+    padding: 20px 0;
+    background:linear-gradient(to right, #0097b2, #7ed957);
+    margin-bottom: 15px;
+
+    
+}
+
+
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+nav ul li {
+    display: inline;
+   
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.planet{
+    
+    text-align: center;
+    height: auto;
+}
+
+.intro, .funcionamento, .importancia {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.funcionamento .steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.funcionamento .step {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: #0097b2;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.funcionamento .step2 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: #3ebf86;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.funcionamento .step3 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: #67d239;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.funcionamento .step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.importancia{
+    margin-top: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+
+
+.tipos-lixo .tipos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;  /* Espaçamento entre os itens */
+    /* margin-top: 20px; */
+}
+
+.tipos-lixo .tipo {
+    width: calc(20% - 20px);  /* Ajusta o tamanho com o gap */
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;  /* Efeito ao passar o mouse */
+}
+
+.tipos-lixo .tipo:hover {
+    transform: scale(1.05);  /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+.tipos-lixo img {
+    width: 500px;
+    height: auto;
+    object-fit: contain;
+    margin-left: -157px;
+    
+}
+
+.zona-container {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px;
+   
+}
+
+
+.zona-container img{
+    justify-content: center;
+    width: 100%; 
+    height: auto ;
+  
+}
+
+.zona{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+.zona:hover{
+    transform: scale(1.05); 
+}
+
+.a{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: -10px;
+}
+
+.bg{
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-image:url('../img/COLETA SELETIVAA.png');
+    width: 100%;
+    height: 215px;
+}

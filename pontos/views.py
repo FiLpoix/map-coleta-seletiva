@@ -35,3 +35,6 @@ def mapa(request):
 
 def adicionar_ponto(request):
     return render(request, 'pontos/add_ponto.html')
+
+def site(request):
+    return render(request, 'pontos/a.html')
