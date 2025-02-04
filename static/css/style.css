@@ -1,0 +1,243 @@
+/* Reset básico */
+body, h1, p, ul, li, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #34495e;
+    font-size: 18px;
+}
+
+a {
+    display: inline-block;
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background 0.3s;
+}
+
+a:hover {
+    background-color: #219150;
+}
+
+/* Estilização do mapa */
+div[style*="width: 50%"] {
+    width: 100%;
+    max-width: 600px;
+    height: 500px;
+    margin: 20px auto;
+    border: 2px solid #2c3e50;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+/* Lista de pontos de coleta */
+div:last-of-type {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 20px;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+ul {
+    background: #ecf0f1;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+
+/* add_ponto */
+/* Reset básico
+body, h1, form, label, input, textarea, button, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #219150;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.message {
+    margin-top: 15px;
+    color: #27ae60;
+    font-weight: bold;
+} */
+
+
+/* Reset básico */
+body, h1, form, label, input, textarea, button, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    border-left: 5px solid #27ae60; /* Elemento verde para lembrar sustentabilidade */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #219150;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.message {
+    margin-top: 15px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Ícones sustentáveis */
+form::before {
+    content: '\267B'; /* Símbolo de reciclagem */
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    color: #27ae60;
+    margin-bottom: 10px;
+}
