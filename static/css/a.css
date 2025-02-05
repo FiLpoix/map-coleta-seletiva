@@ -68,10 +68,19 @@ h2 {
 }
 
 .planet{
-    
-    text-align: center;
-    height: auto;
+    background-color: #333;
+    display: flex;
+    width: 100%;
 }
+
+.planet img{
+
+    justify-content: center;
+    align-items: center;
+    object-fit:fill;
+    
+}
+
 
 .intro, .funcionamento, .importancia {
     background-color: white;
